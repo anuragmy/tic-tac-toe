@@ -4,7 +4,7 @@ import Board from "./components/Board";
 import Score from "./components/Score";
 
 const App = () => {
-  const [winner, setWinner] = useState(null);
+  const [winner, setWinner] = useState({ type: "" });
   // setting this as object so that child re-render
   // if if gets the same prop
   const getWinner = (type) => setWinner({ type });
