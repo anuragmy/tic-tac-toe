@@ -1,0 +1,30 @@
+.board {
+  display: grid;
+  justify-content: center;
+  gap: 1px;
+  align-content: center;
+  margin: 50px auto;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  position: relative;
+  width: fit-content;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  border: "1px solid white";
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.cell:hover {
+  background: teal;
+}
+
+.cell .x {
+  color: "lightgreen";
+}
