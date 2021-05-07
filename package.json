@@ -4,16 +4,10 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
-    "@material-ui/data-grid": "^4.0.0-alpha.27",
-    "@material-ui/icons": "latest",
-    "@material-ui/lab": "latest",
-    "clsx": "^1.1.1",
-    "material-ui-chip-input": "1.1.0",
+    "@material-ui/lab": "^4.0.0-alpha.58",
     "react": "latest",
     "react-checkbox-tree": "^1.6.0",
     "react-dom": "latest",
-    "react-dropdown-tree-select": "^2.5.1",
-    "react-icons": "^4.2.0",
     "react-scripts": "latest"
   },
   "scripts": {
