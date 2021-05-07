@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   font-size: 100px;
+
   border: "1px solid white";
   height: 100px;
   width: 100px;
@@ -23,8 +24,4 @@
 }
 .cell:hover {
   background: teal;
-}
-
-.cell .x {
-  color: "lightgreen";
 }

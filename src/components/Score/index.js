@@ -12,21 +12,18 @@ import Button from "@material-ui/core/Button";
 const Score = ({ winner }) => {
   const [xCount, setXCount] = useState(0);
   const [oCount, setOCount] = useState(0);
-  const [rows, setRows] = useState([{ id: 1, X: xCount, O: oCount }]);
-  // eslint-disable-next-line
+
   useEffect(() => {
-    if (winner === "X") {
+    if (winner.type === "X") {
       setXCount(xCount + 1);
-      setRows([{ id: 1, X: xCount + 1, O: oCount }]);
-    } else if (winner === "O") {
+    } else if (winner.type === "O") {
       setOCount(oCount + 1);
-      setRows([{ id: 1, X: xCount, O: oCount + 1 }]);
     }
-    return () => {};
   }, [winner]);
 
+  useEffect(() => {}, [xCount, oCount]);
+
   const handleClear = () => {
-    setRows([{ id: 1, X: 0, O: 0 }]);
     setXCount(0);
     setOCount(0);
   };
@@ -47,13 +44,10 @@ const Score = ({ winner }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.length > 0 &&
-              rows.map((row) => (
-                <TableRow key={row.id}>
-                  <TableCell align="center">{row.X}</TableCell>
-                  <TableCell align="center">{row.O}</TableCell>
-                </TableRow>
-              ))}
+            <TableRow>
+              <TableCell align="center">{xCount}</TableCell>
+              <TableCell align="center">{oCount}</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
       </TableContainer>
