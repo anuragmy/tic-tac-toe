@@ -22,6 +22,3 @@
   width: 100px;
   cursor: pointer;
 }
-.cell:hover {
-  background: teal;
-}
