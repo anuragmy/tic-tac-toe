@@ -21,7 +21,6 @@ const Score = ({ winner }) => {
     }
   }, [winner]);
 
-  useEffect(() => {}, [xCount, oCount]);
 
   const handleClear = () => {
     setXCount(0);
